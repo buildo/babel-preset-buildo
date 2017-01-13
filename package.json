@@ -1,0 +1,26 @@
+{
+  "name": "babel-preset-buildo",
+  "version": "0.1.0",
+  "description": "Babel configuration used at buildo.",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "babel -w src --out-dir lib",
+    "build": "babel src --out-dir lib",
+    "lint": "eslint src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm run build"
+  },
+  "author": "Ascari Andrea <andrea.ascari@buildo.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-export-extensions": "^6.8.0",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.16.0",
+    "eslint": "^3.13.1",
+    "eslint-config-buildo": "github:buildo/eslint-config"
+  }
+}
