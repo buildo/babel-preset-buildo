@@ -26,5 +26,8 @@
     "babel-eslint": "^7.1.1",
     "eslint": "^3.13.1",
     "eslint-config-buildo": "github:buildo/eslint-config"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }
